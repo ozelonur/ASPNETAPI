@@ -1,6 +1,5 @@
 using System.Reflection;
 using Autofac;
-using KPSS.Caching;
 using KPSS.Core.Repositories;
 using KPSS.Core.Services;
 using KPSS.Core.UnitOfWorks;
@@ -32,7 +31,7 @@ namespace KPSS.API.Modules
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly)
                 .Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
 
-            builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
+            // builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
 
         }
     }

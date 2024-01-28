@@ -41,7 +41,7 @@ namespace KPSS.Caching
             {
                 throw new NotFoundException($"{typeof(Product).Name}({id}) not found!");
             }
-            
+
             return Task.FromResult(product);
         }
 
@@ -97,13 +97,14 @@ namespace KPSS.Caching
             await CacheAllProductsAsync();
         }
 
-        public Task<List<ProductWithCategoryDto>> GetProductsWithCategory()
+        public Task<CustomResponseDto<List<ProductWithCategoryDto>>> GetProductsWithCategory()
         {
             IEnumerable<Product>? products = _memoryCache.Get<IEnumerable<Product>>(CacheProductKey);
 
             List<ProductWithCategoryDto>? productsWithCategoryDto = _mapper.Map<List<ProductWithCategoryDto>>(products);
-            
-            return Task.FromResult(productsWithCategoryDto);
+
+            return Task.FromResult(
+                CustomResponseDto<List<ProductWithCategoryDto>>.Success(200, productsWithCategoryDto));
         }
 
         public async Task CacheAllProductsAsync()

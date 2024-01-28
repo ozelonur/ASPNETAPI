@@ -2,6 +2,7 @@
     ViewData["Title"] = "Index";
 }
 @model List<KPSS.Core.DTOs.ProductWithCategoryDto> 
+<a class="btn btn-primary" asp-controller="Products" asp-action="Save">Save Product</a>
 
 <table class="table table-striped">
     <thead>
@@ -28,7 +29,9 @@
             <td>@item.CreatedDate</td>
             <td>
                 <a class="btn btn-warning" asp-controller="Products" asp-action="Update" asp-route-id="@item.Id">Update</a>
-                <a class="btn btn-danger" asp-controller="Products" asp-action="Remove" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-danger" asp-controller="Products" asp-action="Remove" asp-route-id="@item.Id">
+                    <Delete>Delete</Delete>
+                </a>
             </td>
         </tr>
     }
