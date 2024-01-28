@@ -1,6 +1,5 @@
-﻿using System.Diagnostics;
+﻿using KPSS.Core.DTOs;
 using Microsoft.AspNetCore.Mvc;
-using KPSS.Web.Models;
 
 namespace KPSS.Web.Controllers;
 
@@ -24,9 +23,9 @@ public class HomeController : Controller
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    public IActionResult Error(ErrorViewModel errorViewModel)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(errorViewModel);
     }
 }
 

@@ -1,6 +1,7 @@
 using System.Reflection;
 using KPSS.Core;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace KPSS.Repository;
 
@@ -13,6 +14,50 @@ public class AppDbContext : DbContext
     public DbSet<Category> Categories { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductFeature> ProductFeatures { get; set; }
+
+    public override int SaveChanges()
+    {
+        foreach (EntityEntry item in ChangeTracker.Entries())
+        {
+            if (item.Entity is BaseEntity entityReference)
+            {
+                switch (item.State)
+                {
+                    case EntityState.Added:
+                        entityReference.CreatedDate = DateTime.Now;
+                        break;
+                    case EntityState.Modified:
+                        Entry(entityReference).Property(x => x.CreatedDate).IsModified = false; 
+                        entityReference.UpdatedDate = DateTime.Now;
+                        break;
+                }
+            }
+        }
+        
+        return base.SaveChanges();
+    }
+
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+    {
+        foreach (EntityEntry item in ChangeTracker.Entries())
+        {
+            if (item.Entity is BaseEntity entityReference)
+            {
+                switch (item.State)
+                {
+                    case EntityState.Added:
+                        entityReference.CreatedDate = DateTime.Now;
+                        break;
+                    case EntityState.Modified:
+                        Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
+                        entityReference.UpdatedDate = DateTime.Now;
+                        break;
+                }
+            }
+        }
+        
+        return base.SaveChangesAsync(cancellationToken);
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

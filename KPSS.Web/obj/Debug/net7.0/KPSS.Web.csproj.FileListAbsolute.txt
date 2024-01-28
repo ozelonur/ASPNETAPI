@@ -80,3 +80,6 @@
 /Users/onurozel/Projects/KPSS/KPSS.Web/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
 /Users/onurozel/Projects/KPSS/KPSS.Web/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/onurozel/Projects/KPSS/KPSS.Web/obj/Debug/net7.0/KPSS.Web.MvcApplicationPartsAssemblyInfo.cs
+/Users/onurozel/Projects/KPSS/KPSS.Web/bin/Debug/net7.0/Autofac.dll
+/Users/onurozel/Projects/KPSS/KPSS.Web/bin/Debug/net7.0/Autofac.Extensions.DependencyInjection.dll
+/Users/onurozel/Projects/KPSS/KPSS.Web/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

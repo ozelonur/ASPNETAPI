@@ -97,13 +97,13 @@ namespace KPSS.Caching
             await CacheAllProductsAsync();
         }
 
-        public Task<CustomResponseDto<List<ProductWithCategoryDto>>> GetProductsWithCategory()
+        public Task<List<ProductWithCategoryDto>> GetProductsWithCategory()
         {
             IEnumerable<Product>? products = _memoryCache.Get<IEnumerable<Product>>(CacheProductKey);
 
             List<ProductWithCategoryDto>? productsWithCategoryDto = _mapper.Map<List<ProductWithCategoryDto>>(products);
             
-            return Task.FromResult(CustomResponseDto<List<ProductWithCategoryDto>>.Success(200, productsWithCategoryDto));
+            return Task.FromResult(productsWithCategoryDto);
         }
 
         public async Task CacheAllProductsAsync()
