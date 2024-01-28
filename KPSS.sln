@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.Core", "KPSS.Core\KPSS.Core.csproj", "{2C86D11E-54FE-4E0F-B347-8DEE5FEE52E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.Repository", "KPSS.Repository\KPSS.Repository.csproj", "{CABF95FA-699D-4350-9865-31C93A581D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.Service", "KPSS.Service\KPSS.Service.csproj", "{3C508B7C-26E5-4A81-92B4-B7EB59A9BC82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.API", "KPSS.API\KPSS.API.csproj", "{D8DDB95E-B54C-491A-8032-400F0A52D496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.Web", "KPSS.Web\KPSS.Web.csproj", "{DB413C81-6501-4773-9013-4C31CF13A4F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPSS.Caching", "KPSS.Caching\KPSS.Caching.csproj", "{0F57979F-58BC-4EFC-B1EF-F785B33B4540}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C86D11E-54FE-4E0F-B347-8DEE5FEE52E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C86D11E-54FE-4E0F-B347-8DEE5FEE52E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C86D11E-54FE-4E0F-B347-8DEE5FEE52E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C86D11E-54FE-4E0F-B347-8DEE5FEE52E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABF95FA-699D-4350-9865-31C93A581D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABF95FA-699D-4350-9865-31C93A581D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABF95FA-699D-4350-9865-31C93A581D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABF95FA-699D-4350-9865-31C93A581D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C508B7C-26E5-4A81-92B4-B7EB59A9BC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C508B7C-26E5-4A81-92B4-B7EB59A9BC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C508B7C-26E5-4A81-92B4-B7EB59A9BC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C508B7C-26E5-4A81-92B4-B7EB59A9BC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8DDB95E-B54C-491A-8032-400F0A52D496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8DDB95E-B54C-491A-8032-400F0A52D496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8DDB95E-B54C-491A-8032-400F0A52D496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8DDB95E-B54C-491A-8032-400F0A52D496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB413C81-6501-4773-9013-4C31CF13A4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB413C81-6501-4773-9013-4C31CF13A4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB413C81-6501-4773-9013-4C31CF13A4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB413C81-6501-4773-9013-4C31CF13A4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F57979F-58BC-4EFC-B1EF-F785B33B4540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F57979F-58BC-4EFC-B1EF-F785B33B4540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F57979F-58BC-4EFC-B1EF-F785B33B4540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F57979F-58BC-4EFC-B1EF-F785B33B4540}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2911A69-56D7-42C4-942B-0118AD371265}
+	EndGlobalSection
+EndGlobal

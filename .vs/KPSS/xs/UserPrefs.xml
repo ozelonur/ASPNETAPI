@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{DB413C81-6501-4773-9013-4C31CF13A4F6}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KPSS.Core/ProductFeature.cs">
+    <Files>
+      <File FileName="KPSS.Core/BaseEntity.cs" />
+      <File FileName="KPSS.Core/Category.cs" />
+      <File FileName="KPSS.Core/Product.cs" />
+      <File FileName="KPSS.Core/ProductFeature.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KPSS" expanded="True">
+            <Node name="KPSS.Core" expanded="True">
+              <Node name="ProductFeature.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.KPSS.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.KPSS.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

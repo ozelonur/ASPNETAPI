@@ -1,0 +1,12 @@
+/Users/onurozel/Projects/KPSS/KPSS.Core/bin/Debug/net7.0/KPSS.Core.deps.json
+/Users/onurozel/Projects/KPSS/KPSS.Core/bin/Debug/net7.0/KPSS.Core.dll
+/Users/onurozel/Projects/KPSS/KPSS.Core/bin/Debug/net7.0/KPSS.Core.pdb
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.csproj.AssemblyReference.cache
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.AssemblyInfoInputs.cache
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.AssemblyInfo.cs
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.csproj.CoreCompileInputs.cache
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.dll
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/refint/KPSS.Core.dll
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/KPSS.Core.pdb
+/Users/onurozel/Projects/KPSS/KPSS.Core/obj/Debug/net7.0/ref/KPSS.Core.dll
