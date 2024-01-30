@@ -1,0 +1,17 @@
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Repository.deps.json
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Repository.runtimeconfig.json
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Repository.dll
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Repository.pdb
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Core.dll
+/Users/onurozel/Projects/KPSS/KPSS.Repository/bin/Release/net7.0/KPSS.Core.pdb
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.csproj.AssemblyReference.cache
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.AssemblyInfoInputs.cache
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.AssemblyInfo.cs
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.csproj.CoreCompileInputs.cache
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.csproj.CopyComplete
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.dll
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/refint/KPSS.Repository.dll
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.pdb
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/KPSS.Repository.genruntimeconfig.cache
+/Users/onurozel/Projects/KPSS/KPSS.Repository/obj/Release/net7.0/ref/KPSS.Repository.dll
