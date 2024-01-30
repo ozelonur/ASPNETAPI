@@ -17,45 +17,15 @@ public class AppDbContext : DbContext
 
     public override int SaveChanges()
     {
-        foreach (EntityEntry item in ChangeTracker.Entries())
-        {
-            if (item.Entity is BaseEntity entityReference)
-            {
-                switch (item.State)
-                {
-                    case EntityState.Added:
-                        entityReference.CreatedDate = DateTime.Now;
-                        break;
-                    case EntityState.Modified:
-                        Entry(entityReference).Property(x => x.CreatedDate).IsModified = false; 
-                        entityReference.UpdatedDate = DateTime.Now;
-                        break;
-                }
-            }
-        }
-        
+        UpdateChangeTracker();
+
         return base.SaveChanges();
     }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
-        foreach (EntityEntry item in ChangeTracker.Entries())
-        {
-            if (item.Entity is BaseEntity entityReference)
-            {
-                switch (item.State)
-                {
-                    case EntityState.Added:
-                        entityReference.CreatedDate = DateTime.Now;
-                        break;
-                    case EntityState.Modified:
-                        Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
-                        entityReference.UpdatedDate = DateTime.Now;
-                        break;
-                }
-            }
-        }
-        
+        UpdateChangeTracker();
+
         return base.SaveChangesAsync(cancellationToken);
     }
 
@@ -81,5 +51,25 @@ public class AppDbContext : DbContext
             });
 
         base.OnModelCreating(modelBuilder);
+    }
+
+    private void UpdateChangeTracker()
+    {
+        foreach (EntityEntry item in ChangeTracker.Entries())
+        {
+            if (item.Entity is BaseEntity entityReference)
+            {
+                switch (item.State)
+                {
+                    case EntityState.Added:
+                        entityReference.CreatedDate = DateTime.Now;
+                        break;
+                    case EntityState.Modified:
+                        Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
+                        entityReference.UpdatedDate = DateTime.Now;
+                        break;
+                }
+            }
+        }
     }
 }
